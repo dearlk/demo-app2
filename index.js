@@ -41,10 +41,11 @@ mongoose.Promise = global.Promise;
 
 mongoose.connect(dbConfig.url);
 
-mongoose.connection.on('error', function() {
-    console.log('Could not connect to the database. Exiting now...');
-    process.exit();
-});
+// mongoose.connection.on('error', function() {
+//     console.log('Could not connect to the database. Exiting now...');
+//     console.log(error);
+//     process.exit();
+// });
 
 mongoose.connection.once('open', function() {
     console.log("Successfully connected to the database");

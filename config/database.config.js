@@ -1,4 +1,4 @@
 module.exports = {
-    url: 'mongodb://localhost:27017/easy-notes'
+    url: 'mongodb://dev.delapic:27017/easy-notes'
 }
 
